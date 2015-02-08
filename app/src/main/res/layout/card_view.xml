@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mycardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        card_view:cardBackgroundColor="@color/cardview_light_background" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bustextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus no:"
+                android:textSize="25sp"
+                android:textColor="#cc0000" />
+            <TextView
+                android:id="@+id/busvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus no 1234"
+                android:layout_toEndOf="@id/bustextview"
+                android:layout_toRightOf="@id/bustextview"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/from"
+                android:text="From  :"
+                android:layout_below="@id/bustextview"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromvalue"
+                android:layout_toRightOf="@id/from"
+                android:layout_below="@id/bustextview"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:text="Fake from vlaue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/from"
+                android:text="To      :"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/to"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tovalue"
+                android:layout_toRightOf="@id/to"
+                android:singleLine="true"
+                android:layout_below="@id/from"
+                android:text="Fake to "
+                android:layout_alignLeft="@id/fromvalue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/to"
+                android:text="Fare  :"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/fare"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/farevalue"
+                android:text="Fake fare"
+                android:layout_toRightOf="@id/fare"
+                android:layout_below="@id/to"
+                android:layout_alignLeft="@id/fromvalue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance :"
+                android:id="@+id/dist"
+                android:layout_alignTop="@+id/distvalue"
+                android:layout_toLeftOf="@+id/distvalue"
+                android:layout_toStartOf="@+id/distvalue" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distvalue"
+                android:text="Fake dist"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/to"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"/>
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
